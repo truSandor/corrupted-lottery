@@ -11,6 +11,8 @@ package org.example;
 import org.example.fileprocessor.FileProcessor;
 import org.example.generator.LotteryTicketGenerator;
 
+import java.util.List;
+
 public class Main {
     private static final int DATA_SIZE = 1000;
     private static final int HOW_MANY = 5; // how many balls we pull
@@ -29,6 +31,8 @@ public class Main {
         }
         fileProcessor.writeToFile(FILE_PATH, lotteryTickets);
 
+        List<List<Integer>> allLotteryTickets = generator.generateCombinations(HOW_MANY, UP_TO);
+        fileProcessor.writeToFile(DATA_PATH + "all-lottery-tickets.txt", allLotteryTickets);
     }
 
 }
