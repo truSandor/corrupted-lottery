@@ -12,7 +12,7 @@ The idea is to check all bought tickets and choose the numbers so:
 The app is still in development, so far it can: 
 - generate all possible combinations
 - generate x amount of random tickets
-- save both list in a .txt file
+- save both lists in a .txt file
 
 problems:
 - if there are too many combinations:
